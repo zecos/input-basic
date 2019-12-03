@@ -13,6 +13,8 @@
 
 #### Example
 
+![example](https://s5.gifyu.com/images/ezgif.com-crop762341ac25e7e4f4.gif)
+
 ```tsx
 import React from "react"
 import { nameValidator } from "@zecos/validatorz"

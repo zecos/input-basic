@@ -40,9 +40,7 @@ export const text = createInput(({helpers, state}) => {
             aria-label={label}
             value={value}
             onChange={onChange}
-            onBlur={e => {
-              onBlur(e)
-            }}
+            onBlur={onBlur}
             id={id}
           />
         </div>

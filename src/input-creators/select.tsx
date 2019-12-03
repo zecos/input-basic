@@ -3,7 +3,7 @@ import styles from "./select.css"
 import groupStyles from "./group.css"
 import { ReactFieldzSingleActions } from "@zecos/react-fieldz"
 import { IFieldzSingleState } from '@zecos/fieldz'
-import { createInput } from "@zecos/inputz";
+import { createInput } from "@zecos/inputs";
 
 
 const renderOption = ([key, label]) => {

@@ -17,7 +17,7 @@
 
 ```tsx
 import React from "react"
-import { nameValidator } from "@zecos/validatorz"
+import { nameValidator } from "@zecos/validators"
 import { text, textArea, select } from "@zecos/inputs-basic"
 
 export const InputForm = () => {
@@ -62,7 +62,7 @@ You pick an input type:
 Then pass it its options:
 
 *`name: string`: will determine the classname, label, etc. THIS MUST BE CAMEL CASE.
-*`validate?: fn => Error`: an optional function to return an array of errors to display. Do not throw the errors. This works seamlessly with the [@zecos/validatorz](https://npmjs.com/@zecos/validatorz) library.
+*`validate?: fn => Error`: an optional function to return an array of errors to display. Do not throw the errors. This works seamlessly with the [@zecos/validators](https://npmjs.com/@zecos/validators) library.
 * `init?: string | number`: an optional initial value for the field. The default is "".
 
 All together, for a `text` input, it looks like this:

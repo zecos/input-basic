@@ -1,6 +1,6 @@
 {
   "name": "@zecos/inputz-basic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "`@zecos/inputz` is a library for quickly creating form fields for rapid prototyping.",
   "author": "zecos",
   "license": "MIT",
@@ -8,7 +8,17 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "keywords": ["zecos", "forms", "form", "inputz", "inputs", "text field", "text input", "input", "form control"],
+  "keywords": [
+    "zecos",
+    "forms",
+    "form",
+    "inputz",
+    "inputs",
+    "text field",
+    "text input",
+    "input",
+    "form control"
+  ],
   "engines": {
     "node": ">=8",
     "npm": ">=5"

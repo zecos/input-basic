@@ -6,9 +6,9 @@ import { IFieldzSingleState } from '@zecos/fieldz'
 import { createInput } from "@zecos/inputs";
 
 
-const renderOption = ([key, label]) => {
+const renderOption = ([label, value]) => {
   return (
-    <option key={key} value={key}>
+    <option key={value} value={value}>
       {label}
     </option>
   )

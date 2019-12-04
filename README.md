@@ -40,7 +40,7 @@ export const InputForm = () => {
       {/* These are your inputs */}
       <FirstName />
       <DescribeYourself />
-      <FavoriteColor options={{blue: "Blue", red: "Red"}}/>
+      <FavoriteColor options={{Blue: "blue", Red: "red"}}/>
 
       {/* display the data */}
       First Name State: {firstNameState.value}<br />

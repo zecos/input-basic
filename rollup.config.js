@@ -25,6 +25,7 @@ export default {
       sourcemap: true
     }
   ],
+  external: ["react"],
   plugins: [
     external(),
     postcss({

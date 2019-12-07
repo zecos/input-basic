@@ -14,7 +14,7 @@ const renderOption = ([label, value]) => {
   )
 }
 
-export const select = createInput(({helpers, props}) => {
+export const useSelect = createInput(({helpers, props}) => {
   const {
     id,
     name,

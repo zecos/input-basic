@@ -16,7 +16,7 @@ const renderErrors = errors => {
   )
 }
 
-export const text = createInput(({helpers, state}) => {
+export const useText = createInput(({helpers, state}) => {
     const {
       id,
       name,

@@ -22,8 +22,8 @@ export const Text = createInput(({helpers, state}) => {
       name,
       label,
       value,
-      onChange,
-      onBlur,
+      handleChange,
+      handleBlur,
     } = helpers
     
     const {touched, errors} = state
@@ -39,8 +39,8 @@ export const Text = createInput(({helpers, state}) => {
             name={name}
             aria-label={label}
             value={value}
-            onChange={onChange}
-            onBlur={onBlur}
+            onChange={handleChange}
+            onBlur={handleBlur}
             id={id}
           />
         </div>

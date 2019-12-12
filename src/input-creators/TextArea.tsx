@@ -24,8 +24,8 @@ export const TextArea = createInput(({helpers, state, props}) => {
     name,
     label,
     value,
-    onChange,
-    onBlur,
+    handleChange,
+    handleBlur,
   } = helpers
 
   const { touched, errors } = state
@@ -43,8 +43,8 @@ export const TextArea = createInput(({helpers, state, props}) => {
           name={name}
           aria-label={label}
           value={value}
-          onChange={onChange}
-          onBlur={onBlur}
+          onChange={handleChange}
+          onBlur={handleBlur}
           id={id}
         />
       </div>

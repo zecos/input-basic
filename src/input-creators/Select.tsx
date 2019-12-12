@@ -1,8 +1,8 @@
 import * as React from "react"
 import styles from "./Select.css"
 import groupStyles from "./group.css"
-import { ReactFieldzSingleActions } from "@zecos/react-fieldz"
-import { IFieldzSingleState } from '@zecos/fields'
+// import { ReactFieldSingleActions } from "@zecos/input"
+import { IFieldSingleState } from '@zecos/field'
 import { createInput } from "@zecos/input";
 
 
@@ -14,13 +14,21 @@ const renderOption = ([label, value]) => {
   )
 }
 
+interface ReactFieldSingleActions {
+  setValue: (newVal) => any
+  reset: () => any
+  setTouched: () => any
+  refreshErrors: () => any
+  getState: () => any
+}
+
 export const Select = createInput(({helpers, props}) => {
   const {
     id,
     name,
     value,
-    onChange,
-    onBlur,
+    handleChange,
+    handleBlur,
     label,
   } = helpers
 
@@ -32,8 +40,8 @@ export const Select = createInput(({helpers, props}) => {
         </label>
         <select
           className={styles.selectGroup}
-          onChange={onChange}
-          onBlur={onBlur}
+          onChange={handleChange}
+          onBlur={handleBlur}
           name={name}
           id={id}
           value={value}
@@ -47,7 +55,7 @@ export const Select = createInput(({helpers, props}) => {
 })
 
 export interface IOptions {
-  actions: ReactFieldzSingleActions
-  state: IFieldzSingleState
+  actions: ReactFieldSingleActions
+  state: IFieldSingleState
   name: string
 }

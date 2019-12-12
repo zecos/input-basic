@@ -18,19 +18,19 @@
 ```tsx
 import React from "react"
 import { nameValidator } from "@zecos/validators"
-import { useText, useTextArea, useSelect } from "@zecos/inputs-basic"
+import { Text, TextArea, Select } from "@zecos/inputs-basic"
 
 export const InputForm = () => {
-  const {FirstName, firstNameState} = useText({
+  const {FirstName, firstNameState} = Text({
     validate: nameValidator,
     name: "firstName"
   })
 
-  const {DescribeYourself, describeYourselfState} = useTextArea({
+  const {DescribeYourself, describeYourselfState} = TextArea({
     name: "describeYourself"
   })
   
-  const {FavoriteColor, favoriteColorState} = useSelect({
+  const {FavoriteColor, favoriteColorState} = Select({
     init: "blue",
     name: "favoriteColor",
   })
@@ -55,9 +55,9 @@ export const InputForm = () => {
 
 You pick an input type:
 
-* `useText`
-* `useTextArea`
-* `useSelect`
+* `Text`
+* `TextArea`
+* `Select`
 
 Then pass it its options:
 

@@ -2,7 +2,7 @@ import * as React from "react"
 import styles from "./select.css"
 import groupStyles from "./group.css"
 import { ReactFieldzSingleActions } from "@zecos/react-fieldz"
-import { IFieldzSingleState } from '@zecos/fieldz'
+import { IFieldzSingleState } from '@zecos/fields'
 import { createInput } from "@zecos/inputs";
 
 

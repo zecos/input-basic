@@ -1,9 +1,9 @@
 import * as React from "react"
-import styles from "./select.css"
+import styles from "./Select.css"
 import groupStyles from "./group.css"
 import { ReactFieldzSingleActions } from "@zecos/react-fieldz"
 import { IFieldzSingleState } from '@zecos/fields'
-import { createInput } from "@zecos/inputs";
+import { createInput } from "@zecos/input";
 
 
 const renderOption = ([label, value]) => {

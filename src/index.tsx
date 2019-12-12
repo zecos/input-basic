@@ -1,3 +1,3 @@
-export { Text } from './input-creators/text'
-export { TextArea } from './input-creators/text-area'
-export { Select } from "./input-creators/select"
+export { Text } from './input-creators/Text'
+export { TextArea } from './input-creators/TextArea'
+export { Select } from "./input-creators/Select"

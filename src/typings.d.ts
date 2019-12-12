@@ -16,4 +16,4 @@ declare module '*.svg' {
   export { svgComponent as ReactComponent }
 }
 
-declare module "@zecos/inputs";
+declare module "@zecos/input";

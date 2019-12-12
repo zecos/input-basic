@@ -1,7 +1,7 @@
 import * as React from "react";
-import styles from "./text.css";
+import styles from "./Text.css";
 import groupStyles from "./group.css";
-import { createInput } from "@zecos/inputs";
+import { createInput } from "@zecos/input";
 
 
 const renderError = error => <div key={error.toString()} className={styles.error}>{error.toString()}</div>

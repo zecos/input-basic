@@ -25,7 +25,7 @@ export default {
       sourcemap: true
     }
   ],
-  external: ["react", "@zecos/inputs"],
+  external: ["react", "@zecos/input"],
   plugins: [
     external(),
     postcss({

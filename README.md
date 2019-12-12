@@ -1,15 +1,15 @@
-### @zecos/inputs-basic
+### @zecos/input-basic
 
-`@zecos/inputs-basic` is a library for quickly creating form fields for rapid prototyping.
+`@zecos/input-basic` is a library for quickly creating form fields for rapid prototyping.
 
-`@zecos/inputs-basic` is based on the [`@zecos/inputs`](https://npmjs.com/@zecos/inputs) library, which allows you to create your own UI input components with minimal boilerplate.
+`@zecos/input-basic` is based on the [`@zecos/inputs`](https://npmjs.com/@zecos/inputs) library, which allows you to create your own UI input components with minimal boilerplate.
 
 
 #### Installation
 
-`yarn add @zecos/inputs-basic`
+`yarn add @zecos/input-basic`
 
-`npm i -S @zecos/inputs-basic`
+`npm i -S @zecos/input-basic`
 
 #### Example
 
@@ -18,7 +18,7 @@
 ```tsx
 import React from "react"
 import { nameValidator } from "@zecos/validators"
-import { Text, TextArea, Select } from "@zecos/inputs-basic"
+import { Text, TextArea, Select } from "@zecos/input-basic"
 
 export const InputForm = () => {
   const {FirstName, firstNameState} = Text({

@@ -1,7 +1,7 @@
 import * as React from "react";
-import styles from "./text-area.css";
+import styles from "./TextArea.css";
 import groupStyles from "./group.css"
-import { createInput } from "@zecos/inputs";
+import { createInput } from "@zecos/input";
 
 const renderError = error => <div className={styles.error}>{error.toString()}</div>
 const renderErrors = errors => {

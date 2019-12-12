@@ -18,7 +18,7 @@ export interface IOptions {
   rows?: number
 }
 
-export const useTextArea = createInput(({helpers, state, props}) => {
+export const TextArea = createInput(({helpers, state, props}) => {
   const {
     id,
     name,

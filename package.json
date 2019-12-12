@@ -34,7 +34,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "@zecos/inputs": "^0.0.1"
+    "@zecos/inputs": "^0.0.10"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",

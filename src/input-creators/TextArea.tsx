@@ -23,12 +23,11 @@ export const TextArea = createInput(({helpers, state, props}) => {
     id,
     name,
     label,
-    value,
     handleChange,
     handleBlur,
   } = helpers
 
-  const { touched, errors } = state
+  const { touched, errors, value } = state
   return (
     <div className={groupStyles.groupContainer}>
       <div className={groupStyles.formGroup}>

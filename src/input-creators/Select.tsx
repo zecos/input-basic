@@ -22,16 +22,16 @@ interface ReactFieldSingleActions {
   getState: () => any
 }
 
-export const Select = createInput(({helpers, props}) => {
+export const Select = createInput(({helpers, props, state}) => {
   const {
     id,
     name,
-    value,
     handleChange,
     handleBlur,
     label,
   } = helpers
 
+  const { value } = state
   return (
     <div className={groupStyles.groupContainer}>
       <div className={groupStyles.formGroup}>

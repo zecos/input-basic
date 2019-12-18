@@ -13,17 +13,18 @@ export const Checkbox = createInput(({helpers, state, actions, props}) => {
   const boolVal = Boolean(value)
   const {className, ...moreProps} = props
   return (
-    <label className={styles.checkboxContainer} htmlFor={name} id={id}>
+    <div>
+      <label className={styles.checkboxContainer} id={id}>
       {label}
       <input
         type="checkbox"
-        className={`${styles.checkmark} ${className || ""}`}
         name={name}
         checked={boolVal}
         onChange={() => actions.setValue(!boolVal)}
         {...moreProps}
       />
-      <span className={styles.checkmark} />
-    </label>
+      <span className={styles.checkmark}></span>
+      </label>
+    </div>
   )
 })

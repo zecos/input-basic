@@ -9,7 +9,7 @@
   height: 20px;
 }
 
-.container input {
+.checkboxContainer input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -25,13 +25,14 @@
   width: 20px;
   background-color: #eee;
   margin: 0;
+  border-radius: 2px;
 }
 
-.container:hover input ~ .checkmark {
+.checkboxContainer:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-.container input:checked ~ .checkmark {
+.checkboxContainer input:checked ~ .checkmark {
   background-color: #ddd;
 }
 
@@ -41,16 +42,16 @@
   display:none;
 }
 
-.container input:checked ~ .checkmark:after {
+.checkboxContainer input:checked ~ .checkmark:after {
   display: block;
 }
 
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
+.checkboxContainer .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 3px;
   height: 10px;
-  border: solid white;
+  border: solid black;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }

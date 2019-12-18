@@ -16,14 +16,14 @@
   width: 18px;
   height: 18px;
   border-radius: 50%; 
-  background: #ccc;
-  cursor: pointer;
+  background: #aaa;
+  cursor: default;
 }
 
 .sliderInput::-moz-range-thumb {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #ccc;
-  cursor: pointer;
+  background: #aaa;
+  cursor: default;
 }

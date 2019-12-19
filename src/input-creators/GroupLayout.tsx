@@ -7,12 +7,6 @@ const renderError = (error, i) => (
   </div>
 )
 
-const renderItem = (Item, i) => (
-  <div key={i}>
-    <Item />
-  </div>
-)
-
 export const GroupLayout = createLayout(({props, items, errors, helpers}) => {
   const Items = items
     .map(input => {
@@ -24,7 +18,7 @@ export const GroupLayout = createLayout(({props, items, errors, helpers}) => {
     <div>
       {errors.map(renderError)}
       <label>{helpers.label}</label>
-      {items.map(renderItem)}
+      {Items}
     </div>
   )
 })

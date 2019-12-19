@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { createLayout } from '@zecos/input'
+import styles from './GroupLayout.css'
 
 const renderError = (error, i) => (
   <div key={i}>
@@ -17,7 +18,7 @@ export const GroupLayout = createLayout(({props, items, errors, helpers}) => {
   return (
     <div>
       {errors.map(renderError)}
-      <label>{helpers.label}</label>
+      <label className={styles.withMargin}>{helpers.label}</label>
       {Items}
     </div>
   )

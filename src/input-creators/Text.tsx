@@ -16,6 +16,7 @@ const renderErrors = errors => {
   )
 }
 
+const passwordRegExp = /password/i
 export const Text = createInput(({helpers, state, props}) => {
     const {
       id,
@@ -24,6 +25,9 @@ export const Text = createInput(({helpers, state, props}) => {
       handleChange,
       handleBlur,
     } = helpers
+
+    // use password type automatically if the name contains the word "password" just as a convenience
+    const type = props.type || passwordRegExp.test(name) ? "password" : "text"
     
     const {touched, errors, value} = state
     return (
@@ -41,7 +45,7 @@ export const Text = createInput(({helpers, state, props}) => {
             onChange={handleChange}
             onBlur={handleBlur}
             id={id}
-            type={props.type || "text"}
+            type={type}
           />
         </div>
       </div>

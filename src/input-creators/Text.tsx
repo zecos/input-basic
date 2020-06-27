@@ -16,7 +16,7 @@ const renderErrors = errors => {
   )
 }
 
-export const Text = createInput(({helpers, state}) => {
+export const Text = createInput(({helpers, state, props}) => {
     const {
       id,
       name,
@@ -41,6 +41,7 @@ export const Text = createInput(({helpers, state}) => {
             onChange={handleChange}
             onBlur={handleBlur}
             id={id}
+            type={props.type || "text"}
           />
         </div>
       </div>

@@ -33,7 +33,9 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@zecos/field": "^0.0.0"
+  },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0"
   },

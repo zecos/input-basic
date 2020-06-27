@@ -7,9 +7,9 @@
 
 #### Installation
 
-`yarn add @zecos/input-basic`
+`yarn add @zecos/input @zecos/input-basic`
 
-`npm i -S @zecos/input-basic`
+`npm i -S @zecos/input @zecos/input-basic`
 
 #### Example
 
